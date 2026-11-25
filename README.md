@@ -28,6 +28,8 @@
 ## Changes
 
 - Change only what the task requires. Never reformat, rename or restructure code outside it.
+- Within the lines you change anyway, fix unclear names and violations of this manifest.
+- Report improvements you notice outside the task as suggestions instead of making them.
 - Delete code that your change leaves unused. Never comment code out. Why: version control keeps the history.
 
 ## Names and values
@@ -93,6 +95,7 @@
 - Test one behaviour per test. Group variants of one behaviour in one test with one named case per variant.
 - Keep tests fast, independent of each other and deterministic.
 - Keep test data in its own directory.
+- Run tests of concurrent code with a race detector where one exists.
 
 ## Applications with a user interface
 
